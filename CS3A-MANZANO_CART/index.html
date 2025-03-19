@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Add to Cart</title>
+</head>
+<body>
+	<div class="container">
+		<div class="product">
+			<h2>Coffee</h2>
+			<img src="assets/Coffee.png" alt="coffee image">
+			<h3>Price: Php 45.00</h3>
+			<button class="btn btn-success" onclick="addToCart('Coffee', 45.00)">Add to Cart</button>
+			<button class="btn btn-danger" onclick="removeFromCart('Coffee', 45.00)">Remove from Cart</button>
+		</div>
+	
+		<div class="product">
+			<h2>Fresh Milk</h2>
+			<img src="assets/Fresh Milk.png" alt="Fresh Milk image">
+			<h3>Price: Php 55.00</h3>
+			<button class="btn btn-success" onclick="addToCart('Fresh Milk', 55.00)">Add to Cart</button>
+			<button class="btn btn-danger" onclick="removeFromCart('Fresh Milk', 55.00)">Remove from Cart</button>
+		</div>
+	
+		<div id="cart">
+			<h2>Customer's Cart</h2>
+			<ul id="products"></ul>
+		</div>
+	</div>
+	<script src="./js/cart.js" defer></script>
+</body>
+</html>
